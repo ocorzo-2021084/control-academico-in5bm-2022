@@ -1,0 +1,9 @@
+/* 
+    Created on : 6/04/2022, 16:47:34
+    Author     : Octavio Alejandro Corzo Reyes
+*/
+
+#menu-bar{
+    -fx-background-radius: 10 10 10 10;
+    -fx-background-color: #95A5A6;
+}

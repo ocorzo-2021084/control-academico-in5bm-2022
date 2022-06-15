@@ -1,0 +1,26 @@
+
+/* 
+    Created on : 27/04/2022, 13:33:25
+    Author     : josef
+*/
+#pane-principal{
+    -fx-background-color: #D14747;
+    
+}
+#pane-image{
+    -fx-background-color: #EAADAD;
+    -fx-background-radius: 0 0 60 60;
+}
+
+#VBox-principal{
+    -fx-background-color:  #EAADAD;
+    -fx-background-radius:  30 30 30 30;
+}
+.botones-crud{
+    -fx-background-color: #EAADAD;
+}
+
+.botones-crud:hover{
+    -fx-background-color: blanchedalmond;
+    -fx-text-fill: black;
+}

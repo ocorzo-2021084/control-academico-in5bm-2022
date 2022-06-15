@@ -1,0 +1,27 @@
+
+/* 
+    Created on : 18/04/2022, 10:38:40
+    Author     : Octavio Alejandro Corzo Reyes
+*/
+
+#pane-alumnos{
+    -fx-background-color: #EAADAD;
+    -fx-background-radius: 0 0 60 60;
+}
+
+#pane-principal{
+    -fx-background-color: #D14747;
+}
+
+#VBox-principal{
+    -fx-background-color:  #EAADAD;
+    -fx-background-radius:  30 30 30 30;
+}
+
+.botones-crud{
+    -fx-background-color: #EAADAD;
+}
+.botones-crud:hover{
+    -fx-background-color: blanchedalmond;
+    -fx-text-fill: black;
+}
