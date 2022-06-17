@@ -136,10 +136,7 @@ public class Instructores {
 
     @Override
     public String toString() {
-        return "Instructores{" + "id=" + id + ", nombre1=" + nombre1
-                + ", nombre2=" + nombre2 + ", nombre3=" + nombre3
-                + ", apellido1=" + apellido1 + ", apellido2=" + apellido2
-                + ", direccion=" + direccion + ", email=" + email
-                + ", telefono=" + telefono + ", fechaNacimiento=" + fechaNacimiento + '}';
+        return  id + " | " + nombre1;
+                
     }
 }

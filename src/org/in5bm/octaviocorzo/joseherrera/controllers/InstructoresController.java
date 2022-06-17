@@ -1,5 +1,6 @@
 package org.in5bm.octaviocorzo.joseherrera.controllers;
 
+import com.jfoenix.controls.JFXDatePicker;
 import java.net.URL;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -140,8 +141,11 @@ public class InstructoresController implements Initializable {
     @FXML
     private TextField txtId;
 
+    /*@FXML
+    private DatePicker dpkFechaNacimiento;*/
+    
     @FXML
-    private DatePicker dpkFechaNacimiento;
+    private JFXDatePicker dpkFechaNacimiento;
 
     /**
      * Initializes the controller class.
@@ -252,7 +256,7 @@ public class InstructoresController implements Initializable {
         txtDireccion.setEditable(false);
         txtEmail.setEditable(false);
         txtTelefono.setEditable(false);
-        dpkFechaNacimiento.setEditable(false);
+        //dpkFechaNacimiento.setEditable(false);
 
         //txtId.setDisable(true);
         txtNombre1.setDisable(true);

@@ -1,4 +1,3 @@
-
 package org.in5bm.octaviocorzo.joseherrera.models;
 
 import javafx.beans.property.IntegerProperty;
@@ -13,7 +12,7 @@ public class Horarios {
 
     private int id;
     private LocalTime horarioInicio;
-    private LocalTime horarioFinal;
+    private LocalTime horarioSalida;
     private boolean lunes;
     private boolean martes;
     private boolean miercoles;
@@ -24,15 +23,25 @@ public class Horarios {
 
     }
 
-    public Horarios(int id, LocalTime horarioInicio, LocalTime horarioFinal, boolean lunes, boolean martes, boolean miercoles, boolean jueves, boolean viernes) {
+    public Horarios(int id, LocalTime horarioInicio, LocalTime horarioSalida) {
         this.id = id;
         this.horarioInicio = horarioInicio;
-        this.horarioFinal = horarioFinal;
+        this.horarioSalida = horarioSalida;
+    }
+
+    public Horarios(int id, LocalTime horarioInicio, LocalTime horarioSalida, boolean lunes, boolean martes, boolean miercoles, boolean jueves, boolean viernes) {
+        this.id = id;
+        this.horarioInicio = horarioInicio;
+        this.horarioSalida = horarioSalida;
         this.lunes = lunes;
         this.martes = martes;
         this.miercoles = miercoles;
         this.jueves = jueves;
         this.viernes = viernes;
+    }
+
+    public Horarios(int id) {
+        this.id = id;
     }
 
     public int getId() {
@@ -51,15 +60,15 @@ public class Horarios {
         this.horarioInicio = horarioInicio;
     }
 
-    public LocalTime getHorarioFinal() {
-        return horarioFinal;
+    public LocalTime getHorarioSalida() {
+        return horarioSalida;
     }
 
-    public void setHorarioFinal(LocalTime horarioFinal) {
-        this.horarioFinal = horarioFinal;
+    public void setHorarioSalida(LocalTime horarioSalida) {
+        this.horarioSalida = horarioSalida;
     }
 
-    public boolean isLunes() {
+    public boolean getLunes() {
         return lunes;
     }
 
@@ -67,7 +76,7 @@ public class Horarios {
         this.lunes = lunes;
     }
 
-    public boolean isMartes() {
+    public boolean getMartes() {
         return martes;
     }
 
@@ -75,7 +84,7 @@ public class Horarios {
         this.martes = martes;
     }
 
-    public boolean isMiercoles() {
+    public boolean getMiercoles() {
         return miercoles;
     }
 
@@ -83,7 +92,7 @@ public class Horarios {
         this.miercoles = miercoles;
     }
 
-    public boolean isJueves() {
+    public boolean getJueves() {
         return jueves;
     }
 
@@ -91,7 +100,7 @@ public class Horarios {
         this.jueves = jueves;
     }
 
-    public boolean isViernes() {
+    public boolean getViernes() {
         return viernes;
     }
 
@@ -101,8 +110,6 @@ public class Horarios {
 
     @Override
     public String toString() {
-        return id + " | " + horarioInicio + " - " + horarioFinal;
+        return id + " | " + horarioInicio + " | " + horarioSalida;
     }
-    
-    
 }

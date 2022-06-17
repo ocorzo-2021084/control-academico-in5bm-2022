@@ -7,7 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #EEEEEE;" stylesheets="@../resources/css/EstiloMenuPrincipal.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.in5bm.octaviocorzo.joseherrera.controllers.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="950.0" style="-fx-background-color: #EEEEEE;" stylesheets="@../resources/css/EstiloMenuPrincipal.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.in5bm.octaviocorzo.joseherrera.controllers.MenuPrincipalController">
    <children>
       <ImageView fitHeight="435.0" fitWidth="432.0" layoutX="264.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -22,7 +22,7 @@
                   <MenuItem mnemonicParsing="false" onAction="#clicInstructores" text="Instructores" />
                   <MenuItem mnemonicParsing="false" onAction="#clicSalones" text="Salones" />
                   <MenuItem mnemonicParsing="false" onAction="#clicCarrerasTecnicas" text="Carreras Técnicas" />
-                  <MenuItem mnemonicParsing="false" text="Horarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#clicHorarios" text="Horarios" />
                   <MenuItem mnemonicParsing="false" onAction="#clicCursos" text="Cursos" />
                   <MenuItem mnemonicParsing="false" onAction="#clicAsignacionAlumnos" text="Asignación Alumnos" />
             </items>

@@ -1,5 +1,6 @@
 package org.in5bm.octaviocorzo.joseherrera.controllers;
 
+import com.jfoenix.controls.JFXDatePicker;
 import java.net.URL;
 import java.sql.Timestamp;
 import java.sql.PreparedStatement;
@@ -102,8 +103,11 @@ public class AsignacionesAlumnosController implements Initializable {
     @FXML
     private ComboBox<Alumnos> cmbAlumno;
 
+    /*@FXML
+    private DatePicker dpkFechaAsignacion;*/
+    
     @FXML
-    private DatePicker dpkFechaAsignacion;
+    private JFXDatePicker dpkFechaAsignacion;
 
     @FXML
     private ComboBox<Cursos> cmbCurso;
@@ -124,7 +128,7 @@ public class AsignacionesAlumnosController implements Initializable {
     private void deshabilitarCampos() {
         txtId.setEditable(false);
 
-        dpkFechaAsignacion.setEditable(false);
+        //dpkFechaAsignacion.setEditable(false);
 
         txtId.setDisable(true);
         cmbAlumno.setDisable(true);

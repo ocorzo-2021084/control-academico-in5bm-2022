@@ -32,6 +32,17 @@ public class Cursos {
         this.salonId = new SimpleStringProperty();
     }
     
+    public Cursos(String nombreCurso, int ciclo, int cupoMaximo, int cupoMinimo, String carreraTecnicaId, int horarioId, int instructorId, String salonId) {
+        this.nombreCurso = new SimpleStringProperty(nombreCurso);
+        this.ciclo = new SimpleIntegerProperty(ciclo);
+        this.cupoMaximo = new SimpleIntegerProperty(cupoMaximo);
+        this.cupoMinimo = new SimpleIntegerProperty(cupoMinimo);
+        this.carreraTecnicaId = new SimpleStringProperty(carreraTecnicaId);
+        this.horarioId = new SimpleIntegerProperty(horarioId);
+        this.instructorId = new SimpleIntegerProperty(instructorId);
+        this.salonId = new SimpleStringProperty(salonId);
+    }    
+
     public Cursos(int id, String nombreCurso, int ciclo, int cupoMaximo, int cupoMinimo, String carreraTecnicaId, int horarioId, int instructorId, String salonId) {
         this.id = new SimpleIntegerProperty(id);
         this.nombreCurso = new SimpleStringProperty(nombreCurso);
@@ -44,123 +55,113 @@ public class Cursos {
         this.salonId = new SimpleStringProperty(salonId);
     }
     
-    // Crear los Getter's and Setter's
 
-    public int getId() {
-        return id.get();
-    }
-    
-    public void setId(int id) {
-        this.id.set(id);
-    }
-    
     public IntegerProperty id() {
         return id;
     }
     
-    
-    public String getNombreCurso() {
-        return nombreCurso.get();
+    public int getId() {
+        return id.get();
     }
-    
-    public void setNombreCurso(String nombreCurso) {
-        this.nombreCurso.set(nombreCurso);
+
+    public void setId(int id) {
+        this.id.set(id);
     }
-    
+
     public StringProperty nombreCurso() {
         return nombreCurso;
     }
     
-    
-    public int getCiclo() {
-        return ciclo.get();
+    public String getNombreCurso() {
+        return nombreCurso.get();
     }
-    
-    public void setCiclo(int ciclo) {
-        this.ciclo.set(ciclo);
+
+    public void setNombreCurso(String nombreCurso) {
+        this.nombreCurso.set(nombreCurso);
     }
-    
+
     public IntegerProperty ciclo() {
         return ciclo;
     }
     
-    
-    public int getCupoMaximo() {
-        return cupoMaximo.get();
+    public int getCiclo() {
+        return ciclo.get();
+    }    
+
+    public void setCiclo(int ciclo) {
+        this.ciclo.set(ciclo);
     }
-    
-    public void setCupoMaximo(int cupoMaximo) {
-        this.cupoMaximo.set(cupoMaximo);
-    }
-    
+
     public IntegerProperty cupoMaximo() {
         return cupoMaximo;
     }
     
-    
-    public int getCupoMinimo() {
-        return cupoMinimo.get();
+    public int getCupoMaximo() {
+        return cupoMaximo.get();
+    }    
+
+    public void setCupoMaximo(int cupoMaximo) {
+        this.cupoMaximo.set(cupoMaximo);
     }
-    
-    public void setCupoMinimo(int cupoMinimo) {
-        this.cupoMinimo.set(cupoMinimo);
-    }
-    
+
     public IntegerProperty cupoMinimo() {
         return cupoMinimo;
     }
     
-    
-    public String getCarreraTecnicaId() {
-        return carreraTecnicaId.get();
+    public int getCupoMinimo() {
+        return cupoMinimo.get();
+    }    
+
+    public void setCupoMinimo(int cupoMinimo) {
+        this.cupoMinimo.set(cupoMinimo);
     }
-    
-    public void setCarreraTecnicaId(String carreraTecnicaId) {
-        this.carreraTecnicaId.set(carreraTecnicaId);
-    }
-    
+
     public StringProperty carreraTecnicaId() {
         return carreraTecnicaId;
     }
     
-    
-    
-    public int getHorarioId() {
-        return horarioId.get();
+    public String getCarreraTecnicaId() {
+        return carreraTecnicaId.get();
+    }    
+
+    public void setCarreraTecnicaId(String carreraTecnicaId) {
+        this.carreraTecnicaId.set(carreraTecnicaId);
     }
-    
-    public void setHorarioId(int horarioId) {
-        this.horarioId.set(horarioId);
-    }
-    
+
     public IntegerProperty horarioId() {
         return horarioId;
     }
     
-    
-    public int getInstructorId() {
-        return instructorId.get();
+    public int getHorarioId() {
+        return horarioId.get();
+    }    
+
+    public void setHorarioId(int horarioId) {
+        this.horarioId.set(horarioId);
     }
-    
-    public void setInstructorId(int instructorId) {
-        this.instructorId.set(instructorId);
-    }
-    
+
     public IntegerProperty instructorId() {
         return instructorId;
     }
     
+    public int getInstructorId() {
+        return instructorId.get();
+    }    
+
+    public void setInstructorId(int instructorId) {
+        this.instructorId.set(instructorId);
+    }
+
+    public StringProperty salonId() {
+        return salonId;
+    }
     
     public String getSalonId() {
         return salonId.get();
-    }
-    
+    }    
+
     public void setSalonId(String salonId) {
         this.salonId.set(salonId);
-    }
-    
-    public StringProperty salonId() {
-        return salonId;
     }
 
     @Override
@@ -169,4 +170,5 @@ public class Cursos {
     }
     
     
+
 }

@@ -13,9 +13,9 @@ import org.in5bm.octaviocorzo.joseherrera.controllers.MenuPrincipalController;
 import org.in5bm.octaviocorzo.joseherrera.controllers.CarrerasTecnicasController;
 import org.in5bm.octaviocorzo.joseherrera.controllers.SalonesController;
 import org.in5bm.octaviocorzo.joseherrera.controllers.AsignacionesAlumnosController;
-import org.in5bm.octaviocorzo.joseherrera.controllers.CursosController;
+import org.in5bm.octaviocorzo.joseherrera.controllers.HorariosController;
 import org.in5bm.octaviocorzo.joseherrera.controllers.InstructoresController;
-
+import org.in5bm.octaviocorzo.joseherrera.controllers.CursosController;
 /**
  *
  * @author Octavio Alejandro Corzo Reyes Carné: 2021084
@@ -109,7 +109,17 @@ public class Principal extends Application {
 
         }
     }
-    
+    public void mostrarEscenaHorarios() {
+        try {
+            HorariosController horariosController = (HorariosController) cambiarEscena("HorariosView.fxml", 950, 600);
+            horariosController.setEscenarioPrincipal(this);
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.err.println("\nSe produjo en error al intenar mostrar la horarios");
+            System.out.println("\n" + e.getMessage() + "\n");
+
+        }
+    }
     public void mostrarEscenaCursos(){
         try{
             CursosController cursosController = (CursosController) cambiarEscena("CursosView.fxml", 950, 600);
